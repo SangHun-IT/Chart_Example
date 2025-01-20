@@ -61,10 +61,8 @@ namespace Chart_Example.View
             chArea.BackColor = Color.LightGray;
 
             chArea.AxisX.MajorGrid.Enabled = false;
-            chArea.AxisX.LabelStyle.IntervalOffset = 0.5;
-            chArea.AxisX.Minimum = 0.5;
-            chArea.AxisX.Maximum = this.dataSource.Rows.Count + 0.5;
             chArea.AxisX.MajorTickMark.TickMarkStyle = TickMarkStyle.InsideArea;
+            chArea.AxisX.IsMarginVisible = false;
 
             chArea.AxisY.MajorGrid.LineDashStyle = ChartDashStyle.Dot;
             chArea.AxisY.MajorTickMark.TickMarkStyle = TickMarkStyle.InsideArea;
@@ -74,12 +72,10 @@ namespace Chart_Example.View
 
             Series chartSeries = this.chartControl.Series[0];
 
-            chartSeries.IsValueShownAsLabel = true;
-            chartSeries.LabelFormat = "#,##0;#,##0;-";
+            chartSeries.ChartType = SeriesChartType.Area;
             chartSeries.Color = Color.LightBlue;
-            chartSeries.BorderDashStyle = ChartDashStyle.Solid;
             chartSeries.BorderColor = Color.Black;
-            chartSeries.SetCustomProperty("PointWidth", "0.5");
+            chartSeries.BorderWidth = 1;
 
             this.chartControl.Legends.RemoveAt(0);
         }
