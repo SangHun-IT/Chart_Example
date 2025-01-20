@@ -17,7 +17,7 @@ namespace Chart_Example
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ChartExample_1_Form());
+            Application.Run(new ChartExample_3_Form());
         }
     }
 }
