@@ -91,6 +91,12 @@
     <Compile Include="View\ChartExample_7_Form.Designer.cs">
       <DependentUpon>ChartExample_7_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\ChartExample_8_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ChartExample_8_Form.Designer.cs">
+      <DependentUpon>ChartExample_8_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\TemplateForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\ChartExample_7_Form.resx">
       <DependentUpon>ChartExample_7_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ChartExample_8_Form.resx">
+      <DependentUpon>ChartExample_8_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\TemplateForm.resx">
       <DependentUpon>TemplateForm.cs</DependentUpon>
